@@ -1,0 +1,122 @@
+@use '../../node_modules/@unsass/breakpoint';
+
+.home {
+    max-width: 1024px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    form {
+        display: grid;
+        width: 80%;
+
+        label {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            border-radius: 10px;
+            padding: 1rem;
+            background-color: transparent;
+            border: none;
+            color:#fff;
+            font-weight: 400;
+        }
+
+        textarea {
+            border-radius: 10px;
+            padding: 1rem;
+            background-color: transparent;
+            border: none;
+            color:#fff;
+            font-weight: 400;
+        }
+    }
+
+    overflow: hidden;
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 6rem;
+        min-height: 50vh;
+    }
+    
+    &__header {
+        font-size: 4.2rem;
+        color: #fff;
+        line-height: 3.6rem;
+    }
+
+    @include breakpoint.up("desktop") {
+
+        margin-left: 40%;
+
+        &__header {
+            line-height: 4.4rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    @include breakpoint.between("xs", "desktop") {
+        
+    }
+
+    p {
+        line-height: 1.6rem;
+    }
+}
+
+.highlight {
+    color: #28e98c;
+}
+
+.slug {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: 1rem;
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
+        padding: .5rem .8rem;
+        border: 1px solid #999999;
+        border-radius: 40px;
+    }
+}
+
+.introduction {
+    min-height: 100vh;
+}
+
+.project-card {
+    border-radius: 20px;
+
+    &__image {
+        width: 100%;
+        height: 20rem;
+        background-image: url('../../assets/images/chat.png');
+        border-radius: inherit;
+        margin-bottom: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 2rem;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            text-decoration: underline;
+            color:#28e98c;
+        }
+    }
+}
