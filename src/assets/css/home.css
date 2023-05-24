@@ -66,6 +66,7 @@
   align-items: center;
   gap: 0.4rem;
   font-size: 1rem;
+  color: #fff;
 }
 .slug p {
   display: flex;
@@ -75,6 +76,7 @@
   padding: 0.5rem 0.8rem;
   border: 1px solid #999999;
   border-radius: 40px;
+  color: #fff;
 }
 
 .introduction {
@@ -100,4 +102,26 @@
 .project-card a:hover {
   text-decoration: underline;
   color: #28e98c;
+}
+
+.service-card {
+  min-width: 100%;
+  border-radius: 20px;
+  border: 1px solid #999999;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.service-card__header {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.service-card__header h2 {
+  font-size: 1.4rem !important;
+}
+.service-card:hover {
+  cursor: pointer;
+  border-color: #28e98c;
 }/*# sourceMappingURL=home.css.map */

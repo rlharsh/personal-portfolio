@@ -2,7 +2,7 @@ import React from 'react'
 
 import UserInformation from '../Components/user/userinformation'
 import '../assets/css/home.css'
-import { Box, Grid, Home, Mail, User, Zap } from 'react-feather'
+import { Box, Code, Coffee, Figma, Grid, Home, Mail, User, Zap } from 'react-feather'
 
 import chat from '../assets/images/chat.png'
 
@@ -45,6 +45,33 @@ const home = () => {
             <section id="services" data-aos="fade-up">
                 <div className="slug">
                     <p><Grid size={14}/>Services</p>
+                </div>
+                <div className="service-card" data-aos="fade-left">
+                    <div className="service-card__header">
+                        <h2>Website Design</h2>
+                        <Figma size={16} color='#28e98c'/>
+                    </div>
+                    <p>
+                        I create unique digital designs concepts using Figma. You will be able to provide input every step of the way throughout the design process.
+                    </p>
+                </div>
+                <div className="service-card" data-aos="fade-right">
+                    <div className="service-card__header">
+                        <h2>Development</h2>
+                        <Code size={16} color='#28e98c'/>
+                    </div>
+                    <p>
+                        I will handcraft the code needed to get your website, or web application live. You will be able to consult with me at every step throughout the process.
+                    </p>
+                </div>
+                <div className="service-card" data-aos="fade-left">
+                    <div className="service-card__header">
+                        <h2>Sustainability</h2>
+                        <Coffee size={16} color='#28e98c'/>
+                    </div>
+                    <p>
+                        You can rest assured knowing that your data can remain current, with minor updates available at no charge. You will also be provided with full access to source code, meaning that you control the flow of your information.
+                    </p>
                 </div>
             </section>
             <section className="skills" data-aos="fade-up">

@@ -81,6 +81,7 @@
     align-items: center;
     gap: .4rem;
     font-size: 1rem;
+    color: #fff;
 
     p {
         display: flex;
@@ -90,6 +91,7 @@
         padding: .5rem .8rem;
         border: 1px solid #999999;
         border-radius: 40px;
+        color: #fff;
     }
 }
 
@@ -118,5 +120,30 @@
             text-decoration: underline;
             color:#28e98c;
         }
+    }
+}
+
+.service-card {
+    min-width: 100%;
+    border-radius: 20px;
+    border: 1px solid #999999;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+    &__header {
+        h2 {
+            font-size: 1.4rem !important;
+        }
+
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border-color: #28e98c;
     }
 }
