@@ -198,7 +198,7 @@
 }
 
 .skills-container {
-  max-width: 80%;
+  max-width: 100%;
   padding: 2rem;
   display: grid;
   gap: 2em;
