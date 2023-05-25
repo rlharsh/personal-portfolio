@@ -19,7 +19,7 @@ const home = () => {
                     Say hi to <span className="highlight">Ronald,</span><br/>Web designer & developer.
                 </h1>
                 <p>
-                    I design and develop things for the web, mobile, and desktop. I'm currently working on a few projects, but I'm always open to new opportunities. If you'd like to work together, feel free to reach out.
+                Dive into the exhilarating world of digital design and development with me! My canvas stretches across <span className="highlight">web, mobile, and desktop landscapes</span>, constantly bustling with innovative projects. Despite the excitement of my current endeavors, I'm perpetually primed for <span className="highlight">fresh opportunities</span> that stir my creativity. If you're interested in joining forces to craft digital masterpieces, don't hesitate to connect. <span className="highlight">Together</span>, let's shape the future of digital innovation!
                 </p>
             </section>
             <section id="about" data-aos="fade-up">
@@ -30,16 +30,16 @@ const home = () => {
                     Every great story starts with a great <span className='highlight'>story teller</span>.
                 </h2>
                 <p>
-                    And that's what I do, as a web-developer I tell stories through my code. I have been studying and implementing modern web development solutions since <span className='highlight'>2022</span>.
+                Welcome to my world as a web developer, where I weave captivating narratives through the art of code. Since <span className="highlight">2022</span>, I've been immersed in the dynamic currents of modern web development, curating an extensive toolkit of state-of-the-art solutions.
                 </p>
                 <p>
-                    Currently in my second year of college, I live in the state of Wisconsin with my beautiful wife and two cats.
+                As I enter my second year of college, I am humbled and delighted to share my life's journey, rooted in the heart of Wisconsin, with my radiant wife and our two adorable feline companions.
                 </p>
                 <p>
-                    In my free time I enjoy playing video games, watching movies, and spending time with my family. I also enjoy learning new things and expanding my knowledge.
+                When I'm not crafting digital masterpieces, you'll find me indulging in the virtual worlds of video games, immersing in the cinematic universe of movies, or cherishing priceless moments with my family. My thirst for knowledge is unquenchable, and I revel in the thrill of learning and growing each day.
                 </p>
                 <p>
-                    In 2022 I finally got married and decided to start my life anew. I would very much like for you to become <span className='highlight'>part of my story</span>.
+                2022 marked a pivotal chapter in my life, as I tied the knot and embarked on an exhilarating new life journey. I would be honored if you chose to be a part of this ongoing, thrilling narrative. Let's script our success <span className="highlight">story together</span>!
                 </p>
             </section>
             <section id="services" data-aos="fade-up">
@@ -52,7 +52,7 @@ const home = () => {
                         <Figma size={16} color='#28e98c'/>
                     </div>
                     <p>
-                        I create unique digital designs concepts using Figma. You will be able to provide input every step of the way throughout the design process.
+                    Step into the thrilling world of bespoke digital design with Figma! Together, we'll embark on an engaging, interactive journey where your invaluable insights will be woven into each stage of the design process. Witness your visions spring to life as we collaborate to mold the perfect concept that's as unique as you are. Let's shape your digital landscape together!
                     </p>
                 </div>
                 <div className="service-card" data-aos="fade-right">
@@ -61,7 +61,7 @@ const home = () => {
                         <Code size={16} color='#28e98c'/>
                     </div>
                     <p>
-                        I will handcraft the code needed to get your website, or web application live. You will be able to consult with me at every step throughout the process.
+                    Get ready for a thrilling expedition into the dynamic world of coding! I'll meticulously weave each strand of code, crafting the perfect digital tapestry to bring your website or web application to life. But this isn't just a solo act — it's a tandem venture. You'll be included in every strategic twist and turn, enabling us to seamlessly blend your vision into each line of code. Let's collaborate and watch your digital dreams come alive!
                     </p>
                 </div>
                 <div className="service-card" data-aos="fade-left">
@@ -70,7 +70,7 @@ const home = () => {
                         <Coffee size={16} color='#28e98c'/>
                     </div>
                     <p>
-                        You can rest assured knowing that your data can remain current, with minor updates available at no charge. You will also be provided with full access to source code, meaning that you control the flow of your information.
+                    Step into the arena of peace of mind and digital autonomy! With our services, your data doesn't just stay up-to-date - it thrives, refreshed and invigorated, with minor tweaks performed free of charge. But the excitement doesn't stop there! You'll also wield full control over your digital realm with unrestricted access to your source code, allowing you to steer the course of your information flow. Together, we'll ensure your data remains dynamic, empowered, and in your command!
                     </p>
                 </div>
             </section>
@@ -98,9 +98,8 @@ const home = () => {
                 <h2 className='container__header'>
                     Let's <span className="highlight">Talk</span>
                 </h2>
-                <p>Interested in learning more, please fill out the form below to get in contact with me.
-                    You may also send an email to <span className="highlight">ronald.harsh@protonmail.com </span> 
-                    directly for more information and a return call.
+                <p>
+                Ready to ignite the spark of possibility? I invite you to fill out the form below to commence our thrilling collaboration. Alternatively, you can launch a direct line of communication by sending an email to <span className="highlight">ronald.harsh@protonmail.com</span> for an in-depth exploration of possibilities and a prompt callback. Let's seize this exciting opportunity to connect and usher in a new era of digital innovation together!
                 </p>
                 <form action="post">
                     <label htmlFor="full-name">Full Name <span className="urgent">*</span></label>
