@@ -70,13 +70,71 @@ const home = () => {
                         <Coffee size={16} color='#28e98c'/>
                     </div>
                     <p>
-                    Step into the arena of peace of mind and digital autonomy! With our services, your data doesn't just stay up-to-date - it thrives, refreshed and invigorated, with minor tweaks performed free of charge. But the excitement doesn't stop there! You'll also wield full control over your digital realm with unrestricted access to your source code, allowing you to steer the course of your information flow. Together, we'll ensure your data remains dynamic, empowered, and in your command!
+                    Step into the arena of peace of mind and digital autonomy! With my services, your data doesn't just stay up-to-date - it thrives, refreshed and invigorated, with minor tweaks performed free of charge. But the excitement doesn't stop there! You'll also wield full control over your digital realm with unrestricted access to your source code, allowing you to steer the course of your information flow. Together, we'll ensure your data remains dynamic, empowered, and in your command!
                     </p>
                 </div>
             </section>
             <section className="skills" data-aos="fade-up">
                 <div className="slug">
                     <p><Zap size={14}/>Skills</p>
+                </div>
+                <div className="skills-container">
+
+                    { /* HTML5 skill */}
+                    <div className="skill" data-aos="fade-right">
+                        <div className="skill__header">
+                            <h2>HTML5</h2>
+                            <i className="fa-brands fa-html5 fa-beat"></i>
+                        </div>
+                        <p>
+                        The cornerstone of web development, offering enriched semantics, streamlined coding, and advanced web forms. As a backbone of every web application, it supports interactive content, ensuring cross-platform compatibility. My proficiency with HTML5 has enabled me to build structured and accessible web content, facilitating intuitive user navigation.
+                        </p>
+                    </div>
+
+                    { /* JavaScript skill */}
+                    <div className="skill" data-aos="fade-left">
+                        <div className="skill__header">
+                            <h2>JavaScript</h2>
+                            <i className="fa-brands fa-js fa-bounce"></i>
+                        </div>
+                        <p>
+                        A dynamic scripting language that powers interactivity on the web, enabling rich, engaging digital experiences. Its versatility spans client-side and server-side development. With JavaScript, I've crafted interactive features, data-driven applications, and asynchronous communication, bringing websites to life and enhancing user engagement.
+                        </p>
+                    </div>
+
+                    { /* ReactJS Skill */ }
+                    <div className="skill" data-aos="fade-right">
+                        <div className="skill__header">
+                            <h2>ReactJS</h2>
+                            <i className="fa-brands fa-react fa-spin"></i>
+                        </div>
+                        <p>
+                        A robust JavaScript library famed for constructing seamless user interfaces. Excelling in crafting single-page applications, it boosts user experiences with its dynamic rendering and efficient data updates. Harnessing ReactJS, I've created reusable components that improve development efficiency and maintainability across diverse projects.
+                        </p>
+                    </div>
+
+                    { /* NodeJS Skill */ }
+                    <div className="skill" data-aos="fade-left">
+                        <div className="skill__header">
+                            <h2>Node</h2>
+                            <i className="fa-brands fa-node-js fa-shake"></i>
+                        </div>
+                        <p>
+                        A powerful JavaScript runtime that fosters scalable network applications, heralding a revolution in server-side development. With its non-blocking I/O model, it excels at real-time applications and data-intensive tasks. Leveraging NodeJS, I've created efficient, high-performance back-end services that bolster web application functionality and user experiences.
+                        </p>
+                    </div>
+
+                    { /* Sass Skill */ }
+                    <div className="skill" data-aos="fade-right">
+                        <div className="skill__header">
+                            <h2>Sass</h2>
+                            <i className="fa-brands fa-sass fa-beat"></i>
+                        </div>
+                        <p>
+                        An innovative CSS extension language that supercharges style sheets with variables, nesting, and mixins. By promoting reusable styles and reducing repetition, it elevates maintainability and design consistency. My mastery of Sass has facilitated the crafting of sophisticated, efficient style sheets, driving compelling, unified aesthetics across web applications.
+                        </p>
+                    </div>
+
                 </div>
             </section>
             <section id="projects" data-aos="fade-up">

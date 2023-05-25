@@ -27,6 +27,7 @@
             border: 1px solid #999999;
             color:#fff;
             font-weight: 400;
+            width: 100%;
 
             @include breakpoint.between("xs", "desktop") {
                 width: 100%;
@@ -208,5 +209,42 @@
         background-color: transparent;
         color: #28e98c;
         border: 1px solid #28e98c;
+    }
+}
+
+.skills-container {
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 0;
+
+    .skill {
+        padding: 2rem;
+        border: 1px solid #999999;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid #28e98c;
+        }
+
+        .skill__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            i {
+                color: #28e98c;
+                font-size: 1.6rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
     }
 }

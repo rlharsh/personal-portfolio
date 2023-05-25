@@ -24,6 +24,7 @@
   border: 1px solid #999999;
   color: #fff;
   font-weight: 400;
+  width: 100%;
 }
 @media (min-width: 320px) and (max-width: 1175px) {
   .container form input {
@@ -194,4 +195,36 @@
   background-color: transparent;
   color: #28e98c;
   border: 1px solid #28e98c;
+}
+
+.skills-container {
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding: 0;
+}
+.skills-container .skill {
+  padding: 2rem;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.skills-container .skill:hover {
+  border: 1px solid #28e98c;
+}
+.skills-container .skill .skill__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.skills-container .skill .skill__header i {
+  color: #28e98c;
+  font-size: 1.6rem;
+}
+.skills-container .skill .skill__header h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
 }/*# sourceMappingURL=home.css.map */
