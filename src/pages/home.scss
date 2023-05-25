@@ -213,11 +213,11 @@
 }
 
 .skills-container {
-    width: 100%;
+    max-width: 80%;
     padding: 2rem;
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 0;
 
     .skill {
