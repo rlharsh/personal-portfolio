@@ -227,4 +227,61 @@
 .skills-container .skill .skill__header h2 {
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.education-tile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #999999;
+  padding: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.education-tile:hover {
+  border: 1px solid #28e98c;
+}
+.education-tile__body {
+  display: flex;
+  flex-direction: column;
+}
+.education-tile__body p {
+  margin-top: 2rem;
+}
+.education-tile__body h2 {
+  margin-top: 2rem;
+}
+.education-tile__body ul {
+  margin-top: 1rem;
+  padding-left: 40px;
+}
+.education-tile__body ul li {
+  margin-top: 1rem;
+  list-style: square;
+}
+.education-tile__body ul h2 {
+  margin-top: 0rem;
+}
+.education-tile__body ul p {
+  margin-top: 0;
+}
+.education-tile__header {
+  display: flex;
+  justify-content: space-between;
+}
+.education-tile__header__left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.education-tile__header__left h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.education-tile__header__right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: right;
 }/*# sourceMappingURL=home.css.map */

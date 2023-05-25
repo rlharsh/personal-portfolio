@@ -2,7 +2,7 @@ import React from 'react'
 
 import UserInformation from '../Components/user/userinformation'
 import '../assets/css/home.css'
-import { Box, Code, Coffee, Figma, Grid, Home, Mail, User, Zap } from 'react-feather'
+import { Award, Book, Box, Code, Coffee, Figma, Grid, Home, Mail, User, Zap } from 'react-feather'
 
 import chat from '../assets/images/chat.png'
 
@@ -41,38 +41,6 @@ const home = () => {
                 <p>
                 2022 marked a pivotal chapter in my life, as I tied the knot and embarked on an exhilarating new life journey. I would be honored if you chose to be a part of this ongoing, thrilling narrative. Let's script our success <span className="highlight">story together</span>!
                 </p>
-            </section>
-            <section id="services" data-aos="fade-up">
-                <div className="slug">
-                    <p><Grid size={14}/>Services</p>
-                </div>
-                <div className="service-card" data-aos="fade-left">
-                    <div className="service-card__header">
-                        <h2>Website Design</h2>
-                        <Figma size={16} color='#28e98c'/>
-                    </div>
-                    <p>
-                    Step into the thrilling world of bespoke digital design with Figma! Together, we'll embark on an engaging, interactive journey where your invaluable insights will be woven into each stage of the design process. Witness your visions spring to life as we collaborate to mold the perfect concept that's as unique as you are. Let's shape your digital landscape together!
-                    </p>
-                </div>
-                <div className="service-card" data-aos="fade-right">
-                    <div className="service-card__header">
-                        <h2>Development</h2>
-                        <Code size={16} color='#28e98c'/>
-                    </div>
-                    <p>
-                    Get ready for a thrilling expedition into the dynamic world of coding! I'll meticulously weave each strand of code, crafting the perfect digital tapestry to bring your website or web application to life. But this isn't just a solo act — it's a tandem venture. You'll be included in every strategic twist and turn, enabling us to seamlessly blend your vision into each line of code. Let's collaborate and watch your digital dreams come alive!
-                    </p>
-                </div>
-                <div className="service-card" data-aos="fade-left">
-                    <div className="service-card__header">
-                        <h2>Sustainability</h2>
-                        <Coffee size={16} color='#28e98c'/>
-                    </div>
-                    <p>
-                    Step into the arena of peace of mind and digital autonomy! With my services, your data doesn't just stay up-to-date - it thrives, refreshed and invigorated, with minor tweaks performed free of charge. But the excitement doesn't stop there! You'll also wield full control over your digital realm with unrestricted access to your source code, allowing you to steer the course of your information flow. Together, we'll ensure your data remains dynamic, empowered, and in your command!
-                    </p>
-                </div>
             </section>
             <section className="skills" data-aos="fade-up">
                 <div className="slug">
@@ -137,6 +105,38 @@ const home = () => {
 
                 </div>
             </section>
+            <section id="education" data-aos="fade-up">
+                <div className='slug'>
+                    <p><Book size={14}/> Education</p>
+                </div>
+                <div className='education-tile'>
+                    <div className='education-tile__header'>
+                        <div className="education-tile__header__left">
+                            <h2>Nicolet College</h2>
+                            <p>Rhinelander, WI</p>
+                        </div>
+                        <div className="education-tile__header__right">
+                            <h2>Degree: <span className='highlight'>Associates of Science</span></h2>
+                            <p>2022-Present</p>
+                        </div>
+                    </div>
+                    <div className="education-tile__body">
+                        <p>Currently, I'm advancing my technical prowess by pursuing an Associates degree in IT - Web Software Development. This rigorous program has enabled me to gain comprehensive insights into the world of web development, honing my proficiency in diverse programming languages, web design strategies, database management, and more. As I navigate this academic journey, I'm equipped with a growing toolkit of cutting-edge skills to craft intuitive, dynamic web solutions.</p>
+                        <h2>Areas of Study:</h2>
+                        <ul>
+                            <li data-aos="fade-right"><p><span className="highlight">Web Design</span>: Expertly transform reference images into dynamic web applications, bringing unique digital visions to life with precision and creativity.</p></li>
+                            <li data-aos="fade-left"><p><span className="highlight">Project Management</span>: Lead projects from conception to completion, utilizing strategic planning, resource allocation, and proactive problem-solving to ensure timely and successful delivery.</p></li>
+                            <li data-aos="fade-right"><p><span className="highlight">Communication</span>: Harness excellent communication skills to foster effective collaboration, streamline processes, and ensure clarity and alignment within project teams.</p></li>
+                            <li data-aos="fade-left"><p><span className="highlight">Web Software Programming</span>: Skilled in crafting efficient, scalable web software, leveraging diverse programming languages and frameworks to create robust, user-centric solutions.</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="awards" data-aos="fade-up">
+                <div className='slug'>
+                    <p><Award size={14}/> Awards</p>
+                </div>
+            </section>
             <section id="projects" data-aos="fade-up">
                 <div className='slug'>
                     <p><Box size={14}/> Projects</p>
@@ -147,6 +147,38 @@ const home = () => {
                 <div className='project-card' data-aos="fade-left">
                     <div className='project-card__image'></div>
                     <a href="https://vermillion-gnome-a889b2.netlify.app/" target='_blank'>Chatnonymous - Anonymous chat application.</a>
+                </div>
+            </section>
+            <section id="services" data-aos="fade-up">
+                <div className="slug">
+                    <p><Grid size={14}/>Services</p>
+                </div>
+                <div className="service-card" data-aos="fade-left">
+                    <div className="service-card__header">
+                        <h2>Website Design</h2>
+                        <Figma size={16} color='#28e98c'/>
+                    </div>
+                    <p>
+                    Step into the thrilling world of bespoke digital design with Figma! Together, we'll embark on an engaging, interactive journey where your invaluable insights will be woven into each stage of the design process. Witness your visions spring to life as we collaborate to mold the perfect concept that's as unique as you are. Let's shape your digital landscape together!
+                    </p>
+                </div>
+                <div className="service-card" data-aos="fade-right">
+                    <div className="service-card__header">
+                        <h2>Development</h2>
+                        <Code size={16} color='#28e98c'/>
+                    </div>
+                    <p>
+                    Get ready for a thrilling expedition into the dynamic world of coding! I'll meticulously weave each strand of code, crafting the perfect digital tapestry to bring your website or web application to life. But this isn't just a solo act — it's a tandem venture. You'll be included in every strategic twist and turn, enabling us to seamlessly blend your vision into each line of code. Let's collaborate and watch your digital dreams come alive!
+                    </p>
+                </div>
+                <div className="service-card" data-aos="fade-left">
+                    <div className="service-card__header">
+                        <h2>Sustainability</h2>
+                        <Coffee size={16} color='#28e98c'/>
+                    </div>
+                    <p>
+                    Step into the arena of peace of mind and digital autonomy! With my services, your data doesn't just stay up-to-date - it thrives, refreshed and invigorated, with minor tweaks performed free of charge. But the excitement doesn't stop there! You'll also wield full control over your digital realm with unrestricted access to your source code, allowing you to steer the course of your information flow. Together, we'll ensure your data remains dynamic, empowered, and in your command!
+                    </p>
                 </div>
             </section>
             <section id="contact" data-aos="fade-up">
