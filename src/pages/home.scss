@@ -9,6 +9,8 @@
 }
 
 .container {
+    padding: 1rem;
+    
     form {
         display: grid;
         width: 80%;
@@ -22,9 +24,18 @@
             border-radius: 10px;
             padding: 1rem;
             background-color: transparent;
-            border: none;
+            border: 1px solid #999999;
             color:#fff;
             font-weight: 400;
+
+            @include breakpoint.between("xs", "desktop") {
+                width: 100%;
+            }
+
+            &:focus {
+                border: 1px solid #28e98c;
+                outline: 0 none;
+            }
         }
 
         textarea {
@@ -34,6 +45,16 @@
             border: none;
             color:#fff;
             font-weight: 400;
+            outline: 1px solid #999999;
+
+            &:focus {
+                border: 1px solid #28e98c;
+                outline: 0 none;
+            }
+
+            @include breakpoint.between("xs", "desktop") {
+                width: 100%;
+            }
         }
     }
 
@@ -51,20 +72,29 @@
         font-size: 4.2rem;
         color: #fff;
         line-height: 3.6rem;
+        font-weight: 400;
+        line-height: 4.8rem;
     }
 
-    @include breakpoint.up("desktop") {
+    @include breakpoint.between("desktop", "xl") {
 
         margin-left: 40%;
-
         &__header {
             line-height: 4.4rem;
             margin-bottom: 4rem;
         }
     }
 
-    @include breakpoint.between("xs", "desktop") {
-        
+    @include breakpoint.between("xl", "2xl") {
+        margin-left: 40%;
+    }
+
+    @include breakpoint.between("2xl", "3xl") {
+        margin-left: 18rem;
+    }
+
+    @include breakpoint.up("3xl") {
+        margin-left: 6rem;
     }
 
     p {
@@ -145,5 +175,32 @@
     &:hover {
         cursor: pointer;
         border-color: #28e98c;
+    }
+}
+
+.urgent {
+    color: red;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: #28e98c;
+    padding: 1rem;
+    border-radius: 40px;
+    color: #1f1f1f;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    visibility: visible;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: transparent;
+        color: #28e98c;
+        border: 1px solid #28e98c;
     }
 }

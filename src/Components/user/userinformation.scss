@@ -34,6 +34,13 @@
         color: #1f1f1f;
         font-family: 'Inter', sans-serif;
         font-weight: 500;
+        transition: all .2s ease-in-out;
+        
+    &:hover {
+        background-color: transparent;
+        color: #28e98c;
+        border: 1px solid #28e98c;
+    }
     }
 
     &__image {
@@ -46,8 +53,14 @@
         border-radius: 20px;
 
         &__photo {
-            object-fit: cover;
+            filter: grayscale(1);
             width: 100%;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                filter: grayscale(0);
+            }
         }
     }
 
@@ -78,7 +91,7 @@
         gap: 1rem;
 
         &__email {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #fff;
         }
 
@@ -91,7 +104,6 @@
             margin-top: 2rem;
             font-size: 1rem;
             text-align: center;
-            font-weight: 400;
         }
     }
 

@@ -6,6 +6,7 @@
 }
 
 .container {
+  padding: 1rem;
   overflow: hidden;
 }
 .container form {
@@ -20,9 +21,18 @@
   border-radius: 10px;
   padding: 1rem;
   background-color: transparent;
-  border: none;
+  border: 1px solid #999999;
   color: #fff;
   font-weight: 400;
+}
+@media (min-width: 320px) and (max-width: 1175px) {
+  .container form input {
+    width: 100%;
+  }
+}
+.container form input:focus {
+  border: 1px solid #28e98c;
+  outline: 0 none;
 }
 .container form textarea {
   border-radius: 10px;
@@ -31,6 +41,16 @@
   border: none;
   color: #fff;
   font-weight: 400;
+  outline: 1px solid #999999;
+}
+.container form textarea:focus {
+  border: 1px solid #28e98c;
+  outline: 0 none;
+}
+@media (min-width: 320px) and (max-width: 1175px) {
+  .container form textarea {
+    width: 100%;
+  }
 }
 .container section {
   display: flex;
@@ -43,14 +63,31 @@
   font-size: 4.2rem;
   color: #fff;
   line-height: 3.6rem;
+  font-weight: 400;
+  line-height: 4.8rem;
 }
-@media (min-width: 1176px) {
+@media (min-width: 1176px) and (max-width: 1199px) {
   .container {
     margin-left: 40%;
   }
   .container__header {
     line-height: 4.4rem;
     margin-bottom: 4rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    margin-left: 40%;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1799px) {
+  .container {
+    margin-left: 18rem;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    margin-left: 6rem;
   }
 }
 .container p {
@@ -124,4 +161,30 @@
 .service-card:hover {
   cursor: pointer;
   border-color: #28e98c;
+}
+
+.urgent {
+  color: red;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  background-color: #28e98c;
+  padding: 1rem;
+  border-radius: 40px;
+  color: #1f1f1f;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  visibility: visible;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: transparent;
+  color: #28e98c;
+  border: 1px solid #28e98c;
 }/*# sourceMappingURL=home.css.map */

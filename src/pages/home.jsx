@@ -98,16 +98,20 @@ const home = () => {
                 <h2 className='container__header'>
                     Let's <span className="highlight">Talk</span>
                 </h2>
-                <p>ronald.harsh@protonmail.com</p>
+                <p>Interested in learning more, please fill out the form below to get in contact with me.
+                    You may also send an email to <span className="highlight">ronald.harsh@protonmail.com </span> 
+                    directly for more information and a return call.
+                </p>
                 <form action="post">
-                    <label htmlFor="full-name">Full Name</label>
-                    <input type="text" name="full-name" id="full-name" />
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" />
+                    <label htmlFor="full-name">Full Name <span className="urgent">*</span></label>
+                    <input type="text" name="full-name" id="full-name" placeholder='Interested Customer' />
+                    <label htmlFor="email">Email <span className="urgent">*</span></label>
+                    <input type="email" name="email" id="email" placeholder='john.doe@mycoolemail.com' />
                     <label htmlFor="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" />
+                    <input type="text" name="subject" id="subject" placeholder='Web Development' />
                     <label htmlFor="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button className='button'><Mail size={24}/> Submit</button>
                 </form>
             </section>
         </div>
