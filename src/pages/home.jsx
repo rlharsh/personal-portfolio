@@ -136,6 +136,29 @@ const home = () => {
                 <div className='slug'>
                     <p><Award size={14}/> Awards</p>
                 </div>
+                <div className="award-container">
+                    <div className="award-container__header">
+                        <h2>Deans List</h2>
+                        <p>2022-Present</p>
+                    </div>
+                    <div className="award-container__body">
+                        <p>
+                        A prestigious academic honor consistently awarded in recognition of my high scholastic performance and commitment to excellence throughout my IT - Web Software Development Associates program. This acknowledgment underscores my dedication to maintaining a high standard of learning, reflecting my potential for success in rigorous professional environments.
+                        </p>
+                    </div>
+                </div>
+                <div className="award-container">
+                    <div className="award-container__header">
+                        <h2>Phi Theta Kappa</h2>
+                        <p>2022-Present</p>
+                    </div>
+                    <div className="award-container__body">
+                        <p>
+                        Honored with membership in this prestigious international honor society, reserved for high-achieving students in two-year colleges. This recognition underscores my commitment to academic excellence, leadership, and service, highlighting my drive for continual learning and personal growth in my pursuit of web development mastery.
+                        </p>
+                        <p>Click <a href="../../ptk-ronald.pdf" target="_blank" rel="noopener noreferrer">here</a> to download a copy of certification.</p>
+                    </div>
+                </div>
             </section>
             <section id="projects" data-aos="fade-up">
                 <div className='slug'>

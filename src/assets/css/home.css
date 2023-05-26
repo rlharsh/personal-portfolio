@@ -153,7 +153,7 @@
   min-width: 100%;
   border-radius: 20px;
   border: 1px solid #999999;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
@@ -199,14 +199,14 @@
 
 .skills-container {
   max-width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding: 0;
 }
 .skills-container .skill {
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid #999999;
   border-radius: 10px;
   cursor: pointer;
@@ -225,7 +225,7 @@
   font-size: 1.6rem;
 }
 .skills-container .skill .skill__header h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -234,7 +234,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid #999999;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
@@ -248,6 +248,7 @@
 }
 .education-tile__body p {
   margin-top: 2rem;
+  line-height: 1.6rem;
 }
 .education-tile__body h2 {
   margin-top: 2rem;
@@ -284,4 +285,39 @@
   flex-direction: column;
   gap: 0.2rem;
   text-align: right;
+}
+
+.award-container {
+  width: 100%;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.award-container:hover {
+  border: 1px solid #28e98c;
+}
+.award-container__header {
+  display: flex;
+  justify-content: space-between;
+}
+.award-container__header h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.award-container__body p {
+  line-height: 1.6rem;
+}
+.award-container a {
+  text-decoration: none;
+  color: #28e98c;
+}
+.award-container a:visited {
+  color: #28e98c;
+}
+.award-container a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=home.css.map */
