@@ -4,7 +4,7 @@ import '../../assets/css/navbar.css'
 
 import { MdClose } from 'react-icons/md';
 import { FiMenu } from 'react-icons/fi';
-import { Box, GitHub, Grid, Home, Instagram, Mail, Twitter, User, Zap } from 'react-feather';
+import { Award, Book, Box, GitHub, Grid, Home, Instagram, Mail, Twitter, User, Zap } from 'react-feather';
 import { Link as ScrollLink } from 'react-scroll';
 
 const navbar = () => {
@@ -23,7 +23,7 @@ const navbar = () => {
 
         window.addEventListener('resize', handleResize);
 
-        return () => {  
+        return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, [])
@@ -39,7 +39,7 @@ const navbar = () => {
             }
           }
         };
-        document.addEventListener('mousedown', handler);
+        //document.addEventListener('mousedown', handler);
         return () => {
           document.removeEventListener('mousedown', handler);
         };
@@ -47,7 +47,6 @@ const navbar = () => {
 
       return (
         <nav ref={ref} className='navbar'>
-          <div className={`white-screen${navbarOpen ? ' show-white': ''}`}></div>
             <button className='toggle' onClick={() => setNavbarOpen((prev) => !prev)}>
               {navbarOpen ? (<MdClose style={{ width: '24px', height: '24px' }} />) : (<FiMenu style={{width: '24px',height: '24px'}}/>)}
             </button>
@@ -55,7 +54,7 @@ const navbar = () => {
             <div className={`menu-nav${navbarOpen ? ' show-menu' : ''}`}>
                 <div className='inner-menu'>
                   <h3>Navigation</h3>
-                    <ul className='contact-links'> 
+                    <ul className='contact-links'>
                     <ScrollLink
                       className='link-holder'
                       to="introduction"
@@ -81,20 +80,6 @@ const navbar = () => {
 
                     <ScrollLink
                       className='link-holder'
-                      to='services'
-                      spy={true}
-                      smooth={true}
-                      offset={-170}
-                      duration={500}
-                      activeClass='active-link'
-                      >
-
-                      <span className='icon-wrapper'><Grid size={16}/></span><p>Services</p>
-
-                      </ScrollLink>
-
-                      <ScrollLink
-                      className='link-holder'
                       to='skills'
                       spy={true}
                       smooth={true}
@@ -104,6 +89,34 @@ const navbar = () => {
                       >
 
                       <span className='icon-wrapper'><Zap size={16}/></span><p>Skills</p>
+
+                      </ScrollLink>
+
+                      <ScrollLink
+                      className='link-holder'
+                      to='education'
+                      spy={true}
+                      smooth={true}
+                      offset={-170}
+                      duration={500}
+                      activeClass='active-link'
+                      >
+
+                      <span className='icon-wrapper'><Book size={16}/></span><p>Education</p>
+
+                      </ScrollLink>
+
+                      <ScrollLink
+                      className='link-holder'
+                      to='awards'
+                      spy={true}
+                      smooth={true}
+                      offset={-170}
+                      duration={500}
+                      activeClass='active-link'
+                      >
+
+                      <span className='icon-wrapper'><Award size={16}/></span><p>Skills</p>
 
                       </ScrollLink>
 
@@ -119,17 +132,20 @@ const navbar = () => {
                     >
                       <span className='icon-wrapper'><Box size={16}/></span><p>Projects</p>
                     </ScrollLink>
+
                     <ScrollLink
                       className='link-holder'
-                      to="contact"
+                      to='services'
                       spy={true}
                       smooth={true}
                       offset={-170}
                       duration={500}
-                      activeClass="active-link"
-                    >
-                      <span className='icon-wrapper'><Mail size={16}/></span><p>Contact</p>
-                    </ScrollLink>
+                      activeClass='active-link'
+                      >
+
+                      <span className='icon-wrapper'><Grid size={16}/></span><p>Services</p>
+
+                      </ScrollLink>
                     </ul>
                     <div className='social'>
                       <h3>Social</h3>

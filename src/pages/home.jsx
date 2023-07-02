@@ -5,6 +5,8 @@ import '../assets/css/home.css'
 import { Award, Book, Box, Code, Coffee, Figma, Grid, Home, Mail, User, Zap } from 'react-feather'
 
 import chat from '../assets/images/chat.png'
+import dictionary from '../assets/images/Dictionary.png';
+import github from '../assets/images/DevFinder.png';
 
 const home = () => {
   return (
@@ -168,8 +170,14 @@ const home = () => {
                     Featured <span className="highlight">Projects</span>
                 </h2>
                 <div className='project-card' data-aos="fade-left">
-                    <div className='project-card__image'></div>
-                    <a href="https://vermillion-gnome-a889b2.netlify.app/" target='_blank'>Chatnonymous - Anonymous chat application.</a>
+                    <img src={dictionary} className='project-image' alt="Dictionary Project Screenshot" />
+                    <a href="https://creative-moxie-076da4.netlify.app/" target='_blank'>Dictionary</a>
+                    <p>An online dictionary that consumes a public API, built using React & TypeScript.</p>
+                </div>
+                <div className='project-card' data-aos="fade-left">
+                    <img src={github} className='project-image' alt="Dictionary Project Screenshot" />
+                    <a href="https://gorgeous-arithmetic-e2e15a.netlify.app/" target='_blank'>GitHub User Information</a>
+                    <p>A GitHub user search, built using React & TypeScript.</p>
                 </div>
             </section>
             <section id="services" data-aos="fade-up">
@@ -203,28 +211,6 @@ const home = () => {
                     Step into the arena of peace of mind and digital autonomy! With my services, your data doesn't just stay up-to-date - it thrives, refreshed and invigorated, with minor tweaks performed free of charge. But the excitement doesn't stop there! You'll also wield full control over your digital realm with unrestricted access to your source code, allowing you to steer the course of your information flow. Together, we'll ensure your data remains dynamic, empowered, and in your command!
                     </p>
                 </div>
-            </section>
-            <section id="contact" data-aos="fade-up">
-                <div className='slug'>
-                    <p><Mail size={14}/> Contact</p>
-                </div>
-                <h2 className='container__header'>
-                    Let's <span className="highlight">Talk</span>
-                </h2>
-                <p>
-                Ready to ignite the spark of possibility? I invite you to fill out the form below to commence our thrilling collaboration. Alternatively, you can launch a direct line of communication by sending an email to <span className="highlight">ronald.harsh@protonmail.com</span> for an in-depth exploration of possibilities and a prompt callback. Let's seize this exciting opportunity to connect and usher in a new era of digital innovation together!
-                </p>
-                <form action="post">
-                    <label htmlFor="full-name">Full Name <span className="urgent">*</span></label>
-                    <input type="text" name="full-name" id="full-name" placeholder='Interested Customer' />
-                    <label htmlFor="email">Email <span className="urgent">*</span></label>
-                    <input type="email" name="email" id="email" placeholder='john.doe@mycoolemail.com' />
-                    <label htmlFor="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" placeholder='Web Development' />
-                    <label htmlFor="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <button className='button'><Mail size={24}/> Submit</button>
-                </form>
             </section>
         </div>
     </div>

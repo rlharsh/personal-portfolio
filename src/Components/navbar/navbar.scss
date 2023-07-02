@@ -19,6 +19,8 @@ button {
     @include breakpoint.up("md") {
         visibility: hidden;
     }
+
+    z-index: 100;
 }
 
 .navbar .toggle {

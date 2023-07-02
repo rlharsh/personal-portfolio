@@ -19,18 +19,6 @@ const UserInformation = () => {
         <p className='user-card__footer__based'>Based in Wisconsin, USA</p>
         <p className='user-card__footer__copyright'>© 2023 Ronald Harsh; All rights reserved.</p>
       </section>
-      <section className='user-card__social-links'>
-        <div className='social-button'>
-          <Twitter size={16} />
-        </div>
-        <div className='social-button'>
-          <GitHub size={16} />
-        </div>
-        <div className='social-button'>
-          <Instagram size={16} />
-        </div>
-      </section>
-      <p className='contact-button'><Mail /> CONTACT ME!</p>
     </div>
   )
 }
