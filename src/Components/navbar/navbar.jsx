@@ -47,7 +47,7 @@ const navbar = () => {
 
       return (
         <nav ref={ref} className='navbar'>
-            <button className='toggle' onClick={() => setNavbarOpen((prev) => !prev)}>
+            <button aria-label='Toggle navigation drawer' className='toggle' onClick={() => setNavbarOpen((prev) => !prev)}>
               {navbarOpen ? (<MdClose style={{ width: '24px', height: '24px' }} />) : (<FiMenu style={{width: '24px',height: '24px'}}/>)}
             </button>
 
