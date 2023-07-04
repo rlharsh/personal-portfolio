@@ -8,11 +8,11 @@ const UserInformation = () => {
   return (
     <div className='user-card'>
       <section className='user-card__header'>
-        <h1 className='user-card__header__name'>Ronald</h1>
+        <p className='user-card__header__name'>Ronald</p>
         <p className='user-card__header__title'>Web Developer</p>
       </section>
       <section className='user-card__image'>
-        <img className='user-card__image__photo' src={userPicture} alt='Picture of Ronald Harsh' />
+        <img className='user-card__image__photo' src={userPicture} alt='Picture of Ronald Harsh' tabIndex="-1"/>
       </section>
       <section className='user-card__footer'>
         <a href="mailto:ronald.harsh@protonmail.com" className='user-card__footer__email'>ronald.harsh@protonmail.com</a>

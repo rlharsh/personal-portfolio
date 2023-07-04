@@ -55,7 +55,7 @@ const navbar = () => {
                 <div className='inner-menu'>
                   <h3>Navigation</h3>
                     <ul className='contact-links'>
-                      <li>
+                      <li role='button'>
                     <ScrollLink
                       className='link-holder'
                       to="introduction"
@@ -64,11 +64,12 @@ const navbar = () => {
                       offset={-170}
                       duration={500}
                       activeClass="active-link"
+                      aria-label='Introduction Section'
                     >
                       <span className='icon-wrapper'><Home size={16}/></span><p>Home</p>
                     </ScrollLink>
                     </li>
-                    <li>
+                    <li role='button'>
                     <ScrollLink
                       className='link-holder'
                       to="about"
@@ -77,12 +78,13 @@ const navbar = () => {
                       offset={-170}
                       duration={500}
                       activeClass="active-link"
+                      aria-label='About Section'
                     >
                       <span className='icon-wrapper'><User size={16}/></span><p>About</p>
                     </ScrollLink>
                     </li>
 
-                    <li>
+                    <li role='button'>
                     <ScrollLink
                       className='link-holder'
                       to='skills'
@@ -91,6 +93,7 @@ const navbar = () => {
                       offset={-170}
                       duration={500}
                       activeClass='active-link'
+                      aria-label='Skills Section'
                       >
 
                       <span className='icon-wrapper'><Zap size={16}/></span><p>Skills</p>
@@ -98,7 +101,7 @@ const navbar = () => {
                       </ScrollLink>
                       </li>
 
-                      <li>
+                      <li role='button'>
                       <ScrollLink
                       className='link-holder'
                       to='education'
@@ -107,6 +110,7 @@ const navbar = () => {
                       offset={-170}
                       duration={500}
                       activeClass='active-link'
+                      aria-label='Education Section'
                       >
 
                       <span className='icon-wrapper'><Book size={16}/></span><p>Education</p>
@@ -114,7 +118,7 @@ const navbar = () => {
                       </ScrollLink>
                       </li>
 
-                      <li>
+                      <li role='button'>
                       <ScrollLink
                       className='link-holder'
                       to='awards'
@@ -123,14 +127,15 @@ const navbar = () => {
                       offset={-170}
                       duration={500}
                       activeClass='active-link'
+                      aria-label='Awards Section'
                       >
 
-                      <span className='icon-wrapper'><Award size={16}/></span><p>Skills</p>
+                      <span className='icon-wrapper'><Award size={16}/></span><p>Awards</p>
 
                       </ScrollLink>
                       </li>
 
-                    <li>
+                    <li role='button'>
                     <ScrollLink
                       className='link-holder'
                       to="projects"
@@ -139,12 +144,13 @@ const navbar = () => {
                       offset={-170}
                       duration={500}
                       activeClass="active-link"
+                      aria-label='Projects Section'
                     >
                       <span className='icon-wrapper'><Box size={16}/></span><p>Projects</p>
                     </ScrollLink>
                     </li>
 
-                    <li>
+                    <li role='button'>
                     <ScrollLink
                       className='link-holder'
                       to='services'
@@ -153,6 +159,7 @@ const navbar = () => {
                       offset={-170}
                       duration={500}
                       activeClass='active-link'
+                      aria-label='Services Section'
                       >
 
                       <span className='icon-wrapper'><Grid size={16}/></span><p>Services</p>

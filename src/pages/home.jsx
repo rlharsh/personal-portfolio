@@ -153,7 +153,7 @@ const home = () => {
                     Featured <span className="highlight">Projects</span>
                 </h2>
                 <article className='project-card' data-aos="fade-left">
-                    <a href="https://creative-moxie-076da4.netlify.app/" target='_blank' rel="noopener noreferrer">Interactive Dictionary</a>
+                    <a href="https://creative-moxie-076da4.netlify.app/" target='_blank' rel="noopener noreferrer" aria-label='View the Interactive Dictionary Project'>Interactive Dictionary</a>
                     <p>
                         An online dictionary that consumes a public API, built using React & TypeScript.
                         This application was built over the span of a weekend for a coding challenge.
@@ -161,7 +161,7 @@ const home = () => {
                     <img src={dictionary} className='project-image' alt="Screenshot of the Interactive Dictionary project" />
                 </article>
                 <article className='project-card' data-aos="fade-left">
-                    <a href="https://gorgeous-arithmetic-e2e15a.netlify.app/" target='_blank' rel="noopener noreferrer">GitHub User Information</a>
+                    <a href="https://gorgeous-arithmetic-e2e15a.netlify.app/" target='_blank' rel="noopener noreferrer" aria-label='View the GitHub User Information Project'>GitHub User Information</a>
                     <p>
                         A GitHub user search, built using React & TypeScript.
                         This application was built as part of a challenge to use the official GitHub public API.
