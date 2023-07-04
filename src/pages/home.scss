@@ -141,6 +141,8 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    border: 1px solid #28e98c;
+    padding: 1rem;
 
     &__image {
         width: 100%;
@@ -164,8 +166,10 @@
 }
 
 .project-image {
-    border-radius: 10px;
-    object-fit: fill;
+    border-radius: 20px;
+    object-fit:cover;
+    background-attachment: fixed;
+    height: 20rem;
     width: 100%;
 }
 

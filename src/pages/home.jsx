@@ -170,14 +170,20 @@ const home = () => {
                     Featured <span className="highlight">Projects</span>
                 </h2>
                 <div className='project-card' data-aos="fade-left">
+                    <a href="https://creative-moxie-076da4.netlify.app/" target='_blank'>Interactive Dictionary</a>
+                    <p>
+                        An online dictionary that consumes a public API, built using React & TypeScript.
+                        This application was built over the span of a weekend for a coding challenge.
+                    </p>
                     <img src={dictionary} className='project-image' alt="Dictionary Project Screenshot" />
-                    <a href="https://creative-moxie-076da4.netlify.app/" target='_blank'>Dictionary</a>
-                    <p>An online dictionary that consumes a public API, built using React & TypeScript.</p>
                 </div>
                 <div className='project-card' data-aos="fade-left">
-                    <img src={github} className='project-image' alt="Dictionary Project Screenshot" />
                     <a href="https://gorgeous-arithmetic-e2e15a.netlify.app/" target='_blank'>GitHub User Information</a>
-                    <p>A GitHub user search, built using React & TypeScript.</p>
+                    <p>
+                        A GitHub user search, built using React & TypeScript.
+                        This application was built as part of a challenge to use the official GitHub public API.
+                    </p>
+                    <img src={github} className='project-image' alt="Dictionary Project Screenshot" />
                 </div>
             </section>
             <section id="services" data-aos="fade-up">
