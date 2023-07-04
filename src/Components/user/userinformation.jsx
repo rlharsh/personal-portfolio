@@ -8,7 +8,7 @@ const UserInformation = () => {
   return (
     <div className='user-card'>
       <section className='user-card__header'>
-        <p className='user-card__header__name'>Ronald</p>
+        <p className='user-card__header__name' role="heading">Ronald</p>
         <p className='user-card__header__title'>Web Developer</p>
       </section>
       <section className='user-card__image'>

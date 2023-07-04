@@ -14,7 +14,7 @@ const home = () => {
         <div className='container'>
             <section id="introduction" data-aos="fade-up" className='introduction'>
                 <div className='slug'>
-                    <h2><Home size={14}/> Introduction</h2>
+                    <h2><Home size={14} role="none"/> Introduction</h2>
                 </div>
                 <h1 className='container__header'>
                     Say hi to <span className="highlight">Ronald,</span><br/>Web designer & developer.
@@ -25,7 +25,7 @@ const home = () => {
             </section>
             <section id="about" data-aos="fade-up">
                 <div className='slug'>
-                    <h2><User size={14}/> About</h2>
+                    <h2><User size={14} role="none"/> About</h2>
                 </div>
                 <h2 className='container__header'>
                     Every great story starts with a great <span className='highlight'>story teller</span>.
@@ -45,7 +45,7 @@ const home = () => {
             </section>
             <section className="skills" data-aos="fade-up">
                 <div className="slug">
-                    <h2><Zap size={14}/>Skills</h2>
+                    <h2><Zap size={14} role="none"/>Skills</h2>
                 </div>
                 <div className="skills-container">
 
@@ -93,7 +93,7 @@ const home = () => {
             </section>
             <section id="education" data-aos="fade-up">
                 <div className='slug'>
-                    <h2><Book size={14}/> Education</h2>
+                    <h2><Book size={14} role="none"/> Education</h2>
                 </div>
                 <article className='education-tile'>
                     <div className='education-tile__header'>
@@ -120,7 +120,7 @@ const home = () => {
             </section>
             <section id="awards" data-aos="fade-up">
                 <div className='slug'>
-                    <h2><Award size={14}/> Awards</h2>
+                    <h2><Award size={14} role="none"/> Awards</h2>
                 </div>
                 <article className="award-container">
                     <div className="award-container__header">
@@ -147,7 +147,7 @@ const home = () => {
             </section>
             <section id="projects" data-aos="fade-up">
                 <div className='slug'>
-                    <h2><Box size={14}/> Projects</h2>
+                    <h2><Box size={14} role="none"/> Projects</h2>
                 </div>
                 <h2 className='container__header'>
                     Featured <span className="highlight">Projects</span>
@@ -171,12 +171,12 @@ const home = () => {
             </section>
             <section id="services" data-aos="fade-up">
                 <div className="slug">
-                    <h2><Grid size={14}/>Services</h2>
+                    <h2><Grid size={14} role="none"/>Services</h2>
                 </div>
                 <article className="service-card" data-aos="fade-left">
                     <div className="service-card__header">
                         <h2>Website Design</h2>
-                        <Figma size={16} color='#28e98c'/>
+                        <Figma size={16} role="none" color='#28e98c'/>
                     </div>
                     <p>
                     Step into the thrilling world of bespoke digital design with Figma! Together, we'll embark on an engaging, interactive journey where your invaluable insights will be woven into each stage of the design process. Witness your visions spring to life as we collaborate to mold the perfect concept that's as unique as you are. Let's shape your digital landscape together!
@@ -185,7 +185,7 @@ const home = () => {
                 <article className="service-card" data-aos="fade-right">
                     <div className="service-card__header">
                         <h2>Development</h2>
-                        <Code size={16} color='#28e98c'/>
+                        <Code size={16} role="none" color='#28e98c'/>
                     </div>
                     <p>
                     Get ready for a thrilling expedition into the dynamic world of coding! I'll meticulously weave each strand of code, crafting the perfect digital tapestry to bring your website or web application to life. But this isn't just a solo act — it's a tandem venture. You'll be included in every strategic twist and turn, enabling us to seamlessly blend your vision into each line of code. Let's collaborate and watch your digital dreams come alive!
@@ -194,7 +194,7 @@ const home = () => {
                 <article className="service-card" data-aos="fade-left">
                     <div className="service-card__header">
                         <h2>Sustainability</h2>
-                        <Coffee size={16} color='#28e98c'/>
+                        <Coffee size={16} role="none" color='#28e98c'/>
                     </div>
                     <p>
                     Step into the arena of peace of mind and digital autonomy! With my services, your data doesn't just stay up-to-date - it thrives, refreshed and invigorated, with minor tweaks performed free of charge. But the excitement doesn't stop there! You'll also wield full control over your digital realm with unrestricted access to your source code, allowing you to steer the course of your information flow. Together, we'll ensure your data remains dynamic, empowered, and in your command!
