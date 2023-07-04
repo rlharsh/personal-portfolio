@@ -106,14 +106,19 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
     margin-top: 2rem;
 
     @include breakpoint.up("md") {
         flex-direction: column;
         margin-top: 0;
-        gap: 2rem;
+    }
 
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 

@@ -4,18 +4,17 @@ import UserInformation from '../Components/user/userinformation'
 import '../assets/css/home.css'
 import { Award, Book, Box, Code, Coffee, Figma, Grid, Home, Mail, User, Zap } from 'react-feather'
 
-import chat from '../assets/images/chat.png'
 import dictionary from '../assets/images/Dictionary.png';
 import github from '../assets/images/DevFinder.png';
 
 const home = () => {
   return (
-    <div className='home'>
+    <main className='home'>
         <UserInformation />
         <div className='container'>
             <section id="introduction" data-aos="fade-up" className='introduction'>
                 <div className='slug'>
-                    <p><Home size={14}/> Introduction</p>
+                    <h2><Home size={14}/> Introduction</h2>
                 </div>
                 <h1 className='container__header'>
                     Say hi to <span className="highlight">Ronald,</span><br/>Web designer & developer.
@@ -26,7 +25,7 @@ const home = () => {
             </section>
             <section id="about" data-aos="fade-up">
                 <div className='slug'>
-                    <p><User size={14}/> About</p>
+                    <h2><User size={14}/> About</h2>
                 </div>
                 <h2 className='container__header'>
                     Every great story starts with a great <span className='highlight'>story teller</span>.
@@ -46,72 +45,57 @@ const home = () => {
             </section>
             <section className="skills" data-aos="fade-up">
                 <div className="slug">
-                    <p><Zap size={14}/>Skills</p>
+                    <h2><Zap size={14}/>Skills</h2>
                 </div>
                 <div className="skills-container">
 
                     { /* HTML5 skill */}
-                    <div className="skill" data-aos="fade-right">
+                    <article className="skill" data-aos="fade-right">
                         <div className="skill__header">
                             <h2>HTML5</h2>
-                            <i className="fa-brands fa-html5 fa-beat"></i>
                         </div>
-                        <p>
-                        The cornerstone of web development, offering enriched semantics, streamlined coding, and advanced web forms. As a backbone of every web application, it supports interactive content, ensuring cross-platform compatibility. My proficiency with HTML5 has enabled me to build structured and accessible web content, facilitating intuitive user navigation.
-                        </p>
-                    </div>
+                        <img src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/html-5.svg" alt="HTML5 Logo" />
+                    </article>
 
                     { /* JavaScript skill */}
-                    <div className="skill" data-aos="fade-left">
+                    <article className="skill" data-aos="fade-left">
                         <div className="skill__header">
                             <h2>JavaScript</h2>
-                            <i className="fa-brands fa-js fa-bounce"></i>
                         </div>
-                        <p>
-                        A dynamic scripting language that powers interactivity on the web, enabling rich, engaging digital experiences. Its versatility spans client-side and server-side development. With JavaScript, I've crafted interactive features, data-driven applications, and asynchronous communication, bringing websites to life and enhancing user engagement.
-                        </p>
-                    </div>
+                        <img src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/typescript-icon.svg" alt="TypeScript Logo" />
+                    </article>
 
                     { /* ReactJS Skill */ }
-                    <div className="skill" data-aos="fade-right">
+                    <article className="skill" data-aos="fade-right">
                         <div className="skill__header">
                             <h2>ReactJS</h2>
-                            <i className="fa-brands fa-react fa-spin"></i>
                         </div>
-                        <p>
-                        A robust JavaScript library famed for constructing seamless user interfaces. Excelling in crafting single-page applications, it boosts user experiences with its dynamic rendering and efficient data updates. Harnessing ReactJS, I've created reusable components that improve development efficiency and maintainability across diverse projects.
-                        </p>
-                    </div>
+                        <img src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/react.svg" alt="React Logo" />
+                    </article>
 
                     { /* NodeJS Skill */ }
-                    <div className="skill" data-aos="fade-left">
+                    <article className="skill" data-aos="fade-left">
                         <div className="skill__header">
                             <h2>Node</h2>
-                            <i className="fa-brands fa-node-js fa-shake"></i>
                         </div>
-                        <p>
-                        A powerful JavaScript runtime that fosters scalable network applications, heralding a revolution in server-side development. With its non-blocking I/O model, it excels at real-time applications and data-intensive tasks. Leveraging NodeJS, I've created efficient, high-performance back-end services that bolster web application functionality and user experiences.
-                        </p>
-                    </div>
+                        <img src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/nodejs.svg" alt="Node Logo" />
+                    </article>
 
                     { /* Sass Skill */ }
-                    <div className="skill" data-aos="fade-right">
+                    <article className="skill" data-aos="fade-right">
                         <div className="skill__header">
                             <h2>Sass</h2>
-                            <i className="fa-brands fa-sass fa-beat"></i>
                         </div>
-                        <p>
-                        An innovative CSS extension language that supercharges style sheets with variables, nesting, and mixins. By promoting reusable styles and reducing repetition, it elevates maintainability and design consistency. My mastery of Sass has facilitated the crafting of sophisticated, efficient style sheets, driving compelling, unified aesthetics across web applications.
-                        </p>
-                    </div>
+                        <img src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/sass.svg" alt="SASS Logo" />
+                    </article>
 
                 </div>
             </section>
             <section id="education" data-aos="fade-up">
                 <div className='slug'>
-                    <p><Book size={14}/> Education</p>
+                    <h2><Book size={14}/> Education</h2>
                 </div>
-                <div className='education-tile'>
+                <article className='education-tile'>
                     <div className='education-tile__header'>
                         <div className="education-tile__header__left">
                             <h2>Nicolet College</h2>
@@ -132,13 +116,13 @@ const home = () => {
                             <li data-aos="fade-left"><p><span className="highlight">Web Software Programming</span>: Skilled in crafting efficient, scalable web software, leveraging diverse programming languages and frameworks to create robust, user-centric solutions.</p></li>
                         </ul>
                     </div>
-                </div>
+                </article>
             </section>
             <section id="awards" data-aos="fade-up">
                 <div className='slug'>
-                    <p><Award size={14}/> Awards</p>
+                    <h2><Award size={14}/> Awards</h2>
                 </div>
-                <div className="award-container">
+                <article className="award-container">
                     <div className="award-container__header">
                         <h2>Deans List</h2>
                         <p>2022-Present</p>
@@ -148,8 +132,8 @@ const home = () => {
                         A prestigious academic honor consistently awarded in recognition of my high scholastic performance and commitment to excellence throughout my IT - Web Software Development Associates program. This acknowledgment underscores my dedication to maintaining a high standard of learning, reflecting my potential for success in rigorous professional environments.
                         </p>
                     </div>
-                </div>
-                <div className="award-container">
+                </article>
+                <article className="award-container">
                     <div className="award-container__header">
                         <h2>Phi Theta Kappa</h2>
                         <p>2022-Present</p>
@@ -158,39 +142,38 @@ const home = () => {
                         <p>
                         Honored with membership in this prestigious international honor society, reserved for high-achieving students in two-year colleges. This recognition underscores my commitment to academic excellence, leadership, and service, highlighting my drive for continual learning and personal growth in my pursuit of web development mastery.
                         </p>
-                        <p>Click <a href="../../ptk-ronald.pdf" target="_blank" rel="noopener noreferrer">here</a> to download a copy of certification.</p>
                     </div>
-                </div>
+                </article>
             </section>
             <section id="projects" data-aos="fade-up">
                 <div className='slug'>
-                    <p><Box size={14}/> Projects</p>
+                    <h2><Box size={14}/> Projects</h2>
                 </div>
                 <h2 className='container__header'>
                     Featured <span className="highlight">Projects</span>
                 </h2>
-                <div className='project-card' data-aos="fade-left">
-                    <a href="https://creative-moxie-076da4.netlify.app/" target='_blank'>Interactive Dictionary</a>
+                <article className='project-card' data-aos="fade-left">
+                    <a href="https://creative-moxie-076da4.netlify.app/" target='_blank' rel="noopener noreferrer">Interactive Dictionary</a>
                     <p>
                         An online dictionary that consumes a public API, built using React & TypeScript.
                         This application was built over the span of a weekend for a coding challenge.
                     </p>
-                    <img src={dictionary} className='project-image' alt="Dictionary Project Screenshot" />
-                </div>
-                <div className='project-card' data-aos="fade-left">
-                    <a href="https://gorgeous-arithmetic-e2e15a.netlify.app/" target='_blank'>GitHub User Information</a>
+                    <img src={dictionary} className='project-image' alt="Screenshot of the Interactive Dictionary project" />
+                </article>
+                <article className='project-card' data-aos="fade-left">
+                    <a href="https://gorgeous-arithmetic-e2e15a.netlify.app/" target='_blank' rel="noopener noreferrer">GitHub User Information</a>
                     <p>
                         A GitHub user search, built using React & TypeScript.
                         This application was built as part of a challenge to use the official GitHub public API.
                     </p>
-                    <img src={github} className='project-image' alt="Dictionary Project Screenshot" />
-                </div>
+                    <img src={github} className='project-image' alt="Screenshot of the Interactive GitHub User Search project" />
+                </article>
             </section>
             <section id="services" data-aos="fade-up">
                 <div className="slug">
-                    <p><Grid size={14}/>Services</p>
+                    <h2><Grid size={14}/>Services</h2>
                 </div>
-                <div className="service-card" data-aos="fade-left">
+                <article className="service-card" data-aos="fade-left">
                     <div className="service-card__header">
                         <h2>Website Design</h2>
                         <Figma size={16} color='#28e98c'/>
@@ -198,8 +181,8 @@ const home = () => {
                     <p>
                     Step into the thrilling world of bespoke digital design with Figma! Together, we'll embark on an engaging, interactive journey where your invaluable insights will be woven into each stage of the design process. Witness your visions spring to life as we collaborate to mold the perfect concept that's as unique as you are. Let's shape your digital landscape together!
                     </p>
-                </div>
-                <div className="service-card" data-aos="fade-right">
+                </article>
+                <article className="service-card" data-aos="fade-right">
                     <div className="service-card__header">
                         <h2>Development</h2>
                         <Code size={16} color='#28e98c'/>
@@ -207,8 +190,8 @@ const home = () => {
                     <p>
                     Get ready for a thrilling expedition into the dynamic world of coding! I'll meticulously weave each strand of code, crafting the perfect digital tapestry to bring your website or web application to life. But this isn't just a solo act — it's a tandem venture. You'll be included in every strategic twist and turn, enabling us to seamlessly blend your vision into each line of code. Let's collaborate and watch your digital dreams come alive!
                     </p>
-                </div>
-                <div className="service-card" data-aos="fade-left">
+                </article>
+                <article className="service-card" data-aos="fade-left">
                     <div className="service-card__header">
                         <h2>Sustainability</h2>
                         <Coffee size={16} color='#28e98c'/>
@@ -216,10 +199,10 @@ const home = () => {
                     <p>
                     Step into the arena of peace of mind and digital autonomy! With my services, your data doesn't just stay up-to-date - it thrives, refreshed and invigorated, with minor tweaks performed free of charge. But the excitement doesn't stop there! You'll also wield full control over your digital realm with unrestricted access to your source code, allowing you to steer the course of your information flow. Together, we'll ensure your data remains dynamic, empowered, and in your command!
                     </p>
-                </div>
+                </article>
             </section>
         </div>
-    </div>
+    </main>
   )
 }
 

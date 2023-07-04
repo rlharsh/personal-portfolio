@@ -55,6 +55,7 @@ const navbar = () => {
                 <div className='inner-menu'>
                   <h3>Navigation</h3>
                     <ul className='contact-links'>
+                      <li>
                     <ScrollLink
                       className='link-holder'
                       to="introduction"
@@ -66,6 +67,8 @@ const navbar = () => {
                     >
                       <span className='icon-wrapper'><Home size={16}/></span><p>Home</p>
                     </ScrollLink>
+                    </li>
+                    <li>
                     <ScrollLink
                       className='link-holder'
                       to="about"
@@ -77,7 +80,9 @@ const navbar = () => {
                     >
                       <span className='icon-wrapper'><User size={16}/></span><p>About</p>
                     </ScrollLink>
+                    </li>
 
+                    <li>
                     <ScrollLink
                       className='link-holder'
                       to='skills'
@@ -91,7 +96,9 @@ const navbar = () => {
                       <span className='icon-wrapper'><Zap size={16}/></span><p>Skills</p>
 
                       </ScrollLink>
+                      </li>
 
+                      <li>
                       <ScrollLink
                       className='link-holder'
                       to='education'
@@ -105,7 +112,9 @@ const navbar = () => {
                       <span className='icon-wrapper'><Book size={16}/></span><p>Education</p>
 
                       </ScrollLink>
+                      </li>
 
+                      <li>
                       <ScrollLink
                       className='link-holder'
                       to='awards'
@@ -119,8 +128,9 @@ const navbar = () => {
                       <span className='icon-wrapper'><Award size={16}/></span><p>Skills</p>
 
                       </ScrollLink>
+                      </li>
 
-
+                    <li>
                     <ScrollLink
                       className='link-holder'
                       to="projects"
@@ -132,7 +142,9 @@ const navbar = () => {
                     >
                       <span className='icon-wrapper'><Box size={16}/></span><p>Projects</p>
                     </ScrollLink>
+                    </li>
 
+                    <li>
                     <ScrollLink
                       className='link-holder'
                       to='services'
@@ -146,15 +158,8 @@ const navbar = () => {
                       <span className='icon-wrapper'><Grid size={16}/></span><p>Services</p>
 
                       </ScrollLink>
+                      </li>
                     </ul>
-                    <div className='social'>
-                      <h3>Social</h3>
-                      <div className="social-icons">
-                        <Twitter size={14}/>
-                        <Instagram size={14}/>
-                        <GitHub size={14}/>
-                      </div>
-                    </div>
                 </div>
             </div>
         </nav>

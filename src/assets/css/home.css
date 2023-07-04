@@ -112,7 +112,7 @@
   font-size: 1rem;
   color: #fff;
 }
-.slug p {
+.slug h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,8 +133,12 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  border: 1px solid #28e98c;
+  border: 1px solid #999999;
   padding: 1rem;
+  cursor: pointer;
+}
+.project-card:hover {
+  border: 1px solid #28e98c;
 }
 .project-card__image {
   width: 100%;
@@ -179,6 +183,8 @@
 }
 .service-card__header h2 {
   font-size: 1.4rem !important;
+  color: #28e98c;
+  font-weight: 500;
 }
 .service-card:hover {
   cursor: pointer;
@@ -224,15 +230,23 @@
   border: 1px solid #999999;
   border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 .skills-container .skill:hover {
   border: 1px solid #28e98c;
+}
+.skills-container .skill img {
+  max-width: 40%;
 }
 .skills-container .skill .skill__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  width: 100%;
 }
 .skills-container .skill .skill__header i {
   color: #28e98c;

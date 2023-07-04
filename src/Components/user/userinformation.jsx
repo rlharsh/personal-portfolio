@@ -9,13 +9,13 @@ const UserInformation = () => {
     <div className='user-card'>
       <section className='user-card__header'>
         <h1 className='user-card__header__name'>Ronald</h1>
-        <p className='user-card__header__title'>Web Developer<br />Application Developer</p>
+        <p className='user-card__header__title'>Web Developer</p>
       </section>
       <section className='user-card__image'>
-        <img className='user-card__image__photo' src={userPicture} alt='Ronald' />
+        <img className='user-card__image__photo' src={userPicture} alt='Picture of Ronald Harsh' />
       </section>
       <section className='user-card__footer'>
-        <h2 className='user-card__footer__email'>ronald.harsh@protonmail.com</h2>
+        <a href="mailto:ronald.harsh@protonmail.com" className='user-card__footer__email'>ronald.harsh@protonmail.com</a>
         <p className='user-card__footer__based'>Based in Wisconsin, USA</p>
         <p className='user-card__footer__copyright'>© 2023 Ronald Harsh; All rights reserved.</p>
       </section>
